@@ -20,127 +20,127 @@
  * @author triacontane
  *
  * @param PointerType1
- * @desc スイッチ1がONになった場合のマウス形状です。
+ * @desc The mouse shape when the switch 1 is turned on.
  * @default auto
  *
  * @param PointerSwitch1
- * @desc 形状タイプ1が有効になるスイッチ番号です。
+ * @desc Switch number for shape type 1 to be enabled.
  * @default 0
  *
  * @param PointerType2
- * @desc スイッチ2がONになった場合のマウス形状です。
+ * @desc The mouse shape when the switch 2 is turned on.
  * @default auto
  *
  * @param PointerSwitch2
- * @desc 形状タイプ2が有効になるスイッチ番号です。
+ * @desc Switch number for shape type 2 to be enabled
  * @default 0
  *
  * @param PointerType3
- * @desc スイッチ3がONになった場合のマウス形状です。
+ * @desc The mouse shape when the switch 3 is turned on.
  * @default auto
  *
  * @param PointerSwitch3
- * @desc 形状タイプ3が有効になるスイッチ番号です。
+ * @desc Switch number for shape type 3 to be enabled.
  * @default 0
  *
  * @param PointerType4
- * @desc スイッチ4がONになった場合のマウス形状です。
+ * @desc The mouse shape when the switch 4 is turned on.
  * @default auto
  *
  * @param PointerSwitch4
- * @desc 形状タイプ4が有効になるスイッチ番号です。
+ * @desc Switch number for shape type 4 to be enabled.
  * @default 0
  *
  * @param PointerType5
- * @desc スイッチ5がONになった場合のマウス形状です。
+ * @desc The mouse shape when the switch 5 is turned on.
  * @default auto
  *
  * @param PointerSwitch5
- * @desc 形状タイプ5が有効になるスイッチ番号です。
+ * @desc Switch number for shape type 5 to be enabled.
  * @default 0
  *
  * @param DefaultType
- * @desc デフォルトのマウス形状です。
+ * @desc This is the default mouse shape
  * @default auto
  *
  * @param CustomImage1
- * @desc マウスポインタに使用する画像ファイル名(/img/picture/)です。正方形の32*32程度の画像を用意してください。
+ * @desc The image file name (/img/picture/) to use for the mouse pointer. Prepare an image of about 32*32 square.
  * @default
  * @require 1
  * @dir img/pictures/
  * @type file
  *
  * @param CustomImage2
- * @desc マウスポインタに使用する画像ファイル名(/img/picture/)です。正方形の32*32程度の画像を用意してください。
+ * @desc The image file name (/img/picture/) to use for the mouse pointer. Prepare an image of about 32*32 square.
  * @default
  * @require 1
  * @dir img/pictures/
  * @type file
  *
  * @param CustomImage3
- * @desc マウスポインタに使用する画像ファイル名(/img/picture/)です。正方形の32*32程度の画像を用意してください。
+ * @desc The image file name (/img/picture/) to use for the mouse pointer. Prepare an image of about 32*32 square.
  * @default
  * @require 1
  * @dir img/pictures/
  * @type file
  *
  * @param CustomImage4
- * @desc マウスポインタに使用する画像ファイル名(/img/picture/)です。正方形の32*32程度の画像を用意してください。
+ * @desc The image file name (/img/picture/) to use for the mouse pointer. Prepare an image of about 32*32 square.
  * @default
  * @require 1
  * @dir img/pictures/
  * @type file
  *
  * @param CustomImage5
- * @desc マウスポインタに使用する画像ファイル名(/img/picture/)です。正方形の32*32程度の画像を用意してください。
+ * @desc The image file name (/img/picture/) to use for the mouse pointer. Prepare an image of about 32*32 square.
  * @default
  * @require 1
  * @dir img/pictures/
  * @type file
  *
  * @param ErasePointer
- * @desc キーもしくはパッド入力によりポインタを一時的に消去します。マウスを動かすと再び出現します。
+ * @desc Temporarily erase the pointer by key or pad input. If you move the mouse, it will reappear.
  * @default ON
  *
  * @param PointerPath
- * @desc カーソル用の独自画像を/pictures/以外に配置したい場合にパス名を指定してください。区切り文字[/]は不要。
+ * @desc If you want to place your own image for the cursor other than /pictures/, specify the path name. Delimiter [/] is not required.
  * @default
  *
- * @help マウスポインタの形状や表示可否を拡張します。
- * スイッチ条件に応じた多彩な形状変化や、独自画像のポインタ利用
- * 何らかのキー・パッド入力で非表示化する機能を提供します。
+ * @help Extends the shape and visiability of the mouse pointer.
+ * Various shape changes according to switch conditions and pointer use of original images
+ * Provides the ability to hide with some type of keypad input.
  *
- * ポインタの形状タイプは以下の文字列を指定します。
- * auto : 自動(初期値)
- * none : 非表示
- * default : デフォルト
- * pointer : リンク
- * crosshair : 十字
- * move : 移動
- * text : テキスト
- * wait : 処理中
- * help : ヘルプ
- * url1 : 独自画像1(パラメータ参照)
- * url2 : 独自画像2(パラメータ参照)
- * url3 : 独自画像3(パラメータ参照)
- * url4 : 独自画像4(パラメータ参照)
- * url5 : 独自画像5(パラメータ参照)
+ * The shape type of the pointer specifies the following string:
+ * auto : Automatic (initial value)
+ * none : Not visible
+ * default : Default
+ * pointer : Link
+ * crosshair : Cross
+ * move : move
+ * text : Text
+ * wait : In progress
+ * help : Help
+ * url1 : Custom image 1 (see parameter)
+ * url2 : Custom image 2 (see parameter)
+ * url3 : Custom image 3 (see parameter)
+ * url4 : Custom image 4 (see parameter)
+ * url5 : Custom image 5 (see parameter)
  *
- * ※独自画像を指定する場合は、別途画像ファイル名をパラメータに設定してください。
- * ファイル名に加えて拡張子の設定が必要です。(例：icon.png)
+ * * If you specify your own image, please set the image file name as a parameter separately.
+ * In addition to the file name, you must set the extension. (e.g. icon.png)
  *
- * スイッチ条件を満たしたのに画像が表示されない場合は、ファイルパスが間違っているか
- * 指定した画像をアイコンとして利用できないかのどちらかの可能性が高いです。
+ * If the image does not appear even though the switch conditions are met,
+ * it is likely that either the file path is incorrect or the specified image can not be used as an icon.
  *
- * 形状変化用のスイッチは3つまで指定可能で複数の条件を満たした場合は
- * 「1」→「2」→「3」の優先度になります。
+ * Up to three switches for shape change can be specified if multiple conditions are met.
+ * It is the priority of "1" → "2" → "3".
  *
- * また、「キー入力で消去」を有効にするとキーもしくはパッド入力により
- * ポインタを一時的に画面から消去できます。
- * マウス主体の操作を行わない場合にポインタが邪魔にならないための仕様です。
- * マウス関連のイベントが発生すると再びポインタが表示されます。
+ * In addition, if you enable "Erase by keystroke",
+ * you can temporarily erase the pointer from the screen by key or pad input.
+ * This specification is designed to prevent the pointer from getting in the way when you do not use the mouse main operation.
+ * When a mouse-related event occurs, the pointer appears again.
  *
- * このプラグインにはプラグインコマンドはありません。
+ * There are no plug-in commands in this plug-in.
  *
  * This plugin is released under the MIT License.
  */
