@@ -20,20 +20,21 @@
  * @author triacontane
  *
  * @param ActionOutsideFrame
- * @desc ウィンドウの枠外をタッチした場合の動作を選択します。(ok or cancel or off)
+ * @desc Select what happens when you touch outside the window. (ok or cancel or off)
  * @default cancel
  *
- * @help ウィンドウをタッチもしくはクリックした場合の挙動を変更します。
- * 1. マウスオーバーで項目にフォーカス
- * 2. フォーカス状態で1回クリックすると項目決定
- * 3. ウィンドウの枠外をクリックした場合の動作(カスタマイズ可能)を追加
+ * @help Changes the behavior of touching or clicking a window.
+ * 1. Focus on items with mouse hover
+ * 2. Click once in the focus state to determine the item
+ * 3. Added customizable behavior when clicking outside the window
  *
- * このプラグインにはプラグインコマンドはありません。
+ * There are no plug-in commands for this plug-in.
  *
- * 利用規約：
- *  作者に無断で改変、再配布が可能で、利用形態（商用、18禁利用等）
- *  についても制限はありません。
- *  このプラグインはもうあなたのものです。
+ * Terms of Use：
+ *  It is possible to modify and redistribute without the author's permission,
+ *  and there are no restrictions on the form of use
+ *  (commercial use, 18 prohibited use, etc.).
+ *  This plugin is yours now.
  */
 /*:ja
  * @plugindesc ウィンドウタッチ仕様変更プラグイン
