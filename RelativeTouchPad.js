@@ -22,53 +22,54 @@
 //=============================================================================
 
 /*:
- * @plugindesc 相対タッチパッドプラグイン
+ * @plugindesc Relative Touchpad Plug-in
  * @author トリアコンタン
  *
- * @param タッチ有効領域
- * @desc タッチ移動可能な有効領域をピクセル単位で指定します。
+ * @param Touch enabled area
+ * @desc Specifies the effective area, in pixels, that can be moved to touch.
  * @default 0,0,816,624
  *
- * @param パッド画像ファイル
- * @desc パッド画像のファイル名（拡張子は不要）です。
- * 画像は「img/pictures/」以下に保存してください。
+ * @param Pad image file
+ * @desc The file name of the pad image (no extension required).
+ * save the image to "img/pictures/" below.
  * @default
  * @require 1
  * @dir img/pictures/
  * @type file
  *
- * @param アロー画像ファイル
- * @desc アロー画像ファイル名（拡張子は不要）です。
- * 画像は「img/pictures/」以下に保存してください。
+ * @param Arrow Image File
+ * @desc Arrow image file name (no extension required).
+ * Save the image to "img/pictures/" below.
  * @default
  * @require 1
  * @dir img/pictures/
  * @type file
  *
- * @param パッド画像不透明度
- * @desc パッド画像の不透明度（0...255）です。
+ * @param Pad image opacity
+ * @desc Opacity of pad image (0... 255).
  * @default 255
  *
- * @help マップタッチ移動の代わりにタッチを開始した位置からの
- * 相対座標をもとにプレイヤーを移動します。
- * 傾きの大きさによって「その場で方向転換」「歩行」「ダッシュ」と
- * 変化します。
- * オプションの「常時ダッシュ」が有効な場合は「歩行」は行いません。
+ * @help From the location where you started the touch instead of moving the map touch
+ * Moves the player based on relative coordinates.
+ * Depending on the size of the slope, it will change to
+ * "change direction on the spot", "walk", and "dash".
+ * If option Always Dash is enabled, no walking is performed.
  *
- * パッド画像ファイルとアロー画像ファイルに任意のピクチャを
- * 指定することができます。指定しなかった場合は動的に作成された
- * 画像が使用されます。
+ * Pad image files and arrow image files to any picture
+ * It can be specified. If not specified,
+ * the dynamically created image is used.
  *
- * 画像の規格は以下の通りです。
- * ・パッド : 任意のサイズの正方形画像（円形が望ましい）
- * ・アロー : パッドと同じサイズの画像で、上を指していることが分かる画像
+ * The standard of the image is as follows.
+ * Pad: Square image of any size (circular is desirable)
+ * Arrow : An image of the same size as the pad, and an image that can be seen pointing to the top
  *
- * このプラグインにはプラグインコマンドはありません。
+ * There are no plug-in commands for this plug-in.
  *
- * 利用規約：
- *  作者に無断で改変、再配布が可能で、利用形態（商用、18禁利用等）
- *  についても制限はありません。
- *  このプラグインはもうあなたのものです。
+ * Terms of Use:
+ *  It is possible to modify and redistribute without the author's permission,
+ *  and there are no restrictions on the form of use 
+ *  (commercial use, 18 prohibited use, etc.).
+ *  This plugin is yours now.
  */
 
 function Game_Relative_Pad() {
